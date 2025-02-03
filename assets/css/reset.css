@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.6em;
     font-family: var(--font-family-base);
     scroll-behavior: smooth;
     background-color: var(--light-color);
@@ -198,6 +198,10 @@ hr {
     color: var(--light-color);
 }
 
+.primary__color {
+    color: var(--primary-color);
+}
+
 .light__color__75 {
     color: var(--light-color-75);
 }
@@ -271,4 +275,16 @@ hr {
     font-size: calc(var(--font-size-base) - 2px);
     border: 1px solid var(--primary-color-25);
     margin-bottom: var(--spacing-xl);
+}
+
+.gray__round__box {
+    background-color: #FCFBFE;
+    padding: var(--spacing-xxl);
+    border-radius: var(--round-lg);
+    border: 1px solid var(--black-color-10);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
