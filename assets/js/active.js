@@ -26,19 +26,11 @@
             }
         });
         
-        
-        $('.counter').each(function() {
-            var $this = $(this);
-            var countTo = $this.attr('data-count');
-            
-            $({ countNum: $this.text() }).animate({ countNum: countTo }, {
-                duration: 2000, // Duration of the countdown
-                easing: 'swing', // Easing function
-                step: function() {
-                    $this.text(Math.floor(this.countNum));
-                },
-            });
+        $('.counter').counterUp({
+            delay: 10,  // Speed of counting
+            time: 2000  // Duration in milliseconds
         });
+        
 
         $(".accordion__item .title.active").next(".description").show();
         $(".accordion__item .title").click(function () {
