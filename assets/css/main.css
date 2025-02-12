@@ -111,6 +111,7 @@
 /* 1. Page Wrapper */
 .page__wrapper {
     width: 100%;
+    overflow: hidden;
 }
 
 /* 2. Navbar */
@@ -237,6 +238,8 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
 .header__area .header__image {
     text-align: center;
     margin-top: -23vw;
+    position: relative;
+    z-index: -1;
 }
 
 .header__area .header__image img {
