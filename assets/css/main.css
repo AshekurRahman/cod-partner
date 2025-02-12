@@ -8,6 +8,7 @@
 /* 1. Imports */
 @import url('./swiper-bundle-min.css');
 @import url('./reset.css');
+@import url('./aos.css');
 @import url('./root.css');
 @import url('./icons.css');
 @import url('./grids.css');
@@ -70,8 +71,8 @@
 }
 
 .toggle__button {
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
     background: var(--primary-gradient);
     border-radius: var(--round-sm);
     color: var(--primary-color);
@@ -110,7 +111,6 @@
 /* 1. Page Wrapper */
 .page__wrapper {
     width: 100%;
-    overflow: hidden;
 }
 
 /* 2. Navbar */
@@ -125,7 +125,7 @@
 }
 
 .navbar__area .button {
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 10px 24px;
 }
 
 .navbar__area .navbar__row {
@@ -522,15 +522,36 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
 .single__work__item {
     position: relative;
     padding-left: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.single__work {
+    margin-bottom: 24px;
 }
 
 .single__work__item .dot {
     position: absolute;
     left: 0px;
-    top: 34px;
-    height: calc(100% + 32px);
+    top: 8px;
+    height: 100%;
     width: 0px;
     border: 1px dashed #985ffb1f;
+    border-radius: 999px;
+}
+
+@keyframes pulseShadow {
+    0% {
+        box-shadow: 0 0 0 5px #985ffb1f;
+    }
+    50% {
+        box-shadow: 0 0 0 10px #985ffb3f;
+    }
+    100% {
+        box-shadow: 0 0 0 5px #985ffb1f;
+    }
 }
 
 .single__work__item .dot::before {
@@ -540,10 +561,11 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
     top: 0px;
     width: 8px;
     height: 8px;
-    background-color: var(--primary-color);
-    border-radius: 99px;
-    box-shadow: 0 0 0 10px #985ffb1f;
+    display: block;
     border-radius: 999px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 0 10px #985ffb1f;
+    animation: pulseShadow 2s infinite  ease-in-out;
 }
 
 .single__work__item:last-child .dot {

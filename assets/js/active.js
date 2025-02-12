@@ -1,6 +1,12 @@
 ;(function($) {
     $(document).ready(function() {
 
+        // Initialize AOS
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+            once: true,     // Animation should happen only once
+        });
+
         $(document).ready(function(){
             $('.navbar__area .nav__menu  li > .toggle').on('click', function(){
                 $(this).siblings('ul').slideToggle(); // Toggle submenu

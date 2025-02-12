@@ -93,7 +93,7 @@
     }
 
     .nav__menu {
-        display: inherit !important;
+        display: inline-block !important;
     }
 
 }
