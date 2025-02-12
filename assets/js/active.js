@@ -1,6 +1,23 @@
 ;(function($) {
     $(document).ready(function() {
 
+        $(document).ready(function(){
+            $('.navbar__area .nav__menu  li > .toggle').on('click', function(){
+                $(this).siblings('ul').slideToggle(); // Toggle submenu
+                $(this).find('i').toggleClass('fa-plus fa-minus'); // Toggle icon
+            });
+        });
+        
+
+        $('.toggle__button').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav__menu').slideToggle();
+        
+            // Toggle icon class
+            $(this).find('i').toggleClass('fa-bars-staggered fa-times');
+        });
+        
+
         
         
         var $grid = $('.masonry__items');
