@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" >
 
 <head>
     <!-- Metadata and basic document setup -->
@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/mobile-menu.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/rtl.css">
+    <!-- <link rel="stylesheet" href="./assets/css/rtl.css"> -->
 </head>
 
 <body>
 
     <div class="page__wrapper">
         <!-- Navbar--area -->
-         
         <div class="navbar__area">
             <div class="container p-0"> <!-- Container for page alignment -->
                 <div class="navbar__row">
@@ -30,14 +29,14 @@
                     <div class="row align-items-center g-0"> <!-- Row for layout -->
 
                         <!-- Logo column -->
-                        <div class="col-6 col-xl-3">
+                        <div class="col-6 col-xl-2">
                             <a href="index.html" class="nav__logo">
                                 <img src="./assets/images/logo-dark.png" alt="Floxse">
                             </a>
                         </div>
 
                         <!-- Button column -->
-                        <div class="col-6 col-xl-3 order-xl-1 text-end">
+                        <div class="col-6 col-xl-2 order-xl-1 text-end">
                             <a href="/" class="button">
                                 Sign Up
                             </a>
@@ -46,9 +45,8 @@
                         </div>
 
                         <!-- Navigation menu column -->
-                        <nav class="col-12 col-xl-6 nav__menu">
+                        <nav class="col-12 col-xl-8 nav__menu">
                             <ul class="nav__list"> <!-- Navigation links -->
-                                <li><a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About</a></li>
                                 <li class="mega__item">
                                     <a href="#">Services
@@ -206,17 +204,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="/">Pricing</a></li>
-                                <li><a href="./features.html">Features <span class="arrow"><i class="fa-regular fa-angle-down"></i></span></a>
-                                    <button class="toggle"><i class="fa-regular fa-plus"></i></button>
-                                    <ul class="sub-menu">
-                                        <li><a href="./how-it-works.html">How It Works</a></li>
-                                        <li><a href="./affiliate.html">Affiliate</a></li>
-                                        <li><a href="./capital.html">Capital</a></li>
-                                        <li><a href="./tracking-form.html">Tracking Form</a></li>
-                                        <li><a href="./tracking-result.html">Tracking Result</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="./affiliate.html">Affiliate</a></li>
+                                <li><a href="./tracking-form.html">Tracking</a></li>
+                                <li><a href="./features.html">Features</a></li>
+                                <li><a href="./capital.html">Capital</a></li>
+                                <li><a href="./how-it-works.html">How it works</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -246,6 +238,66 @@
         </header>
 
 
+
+        <section class="product__section section__padding_top">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8">
+                        <form action="" class="search__form">
+                            <input type="text" class="form__input" placeholder="Suspenders">
+                            <button class="button primary">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-xl-4">
+                    
+                    <div class="col">
+                        <div class="gray2__round__box">
+                            <div class="aff_step_image" style="background-image: url('./assets/images/prod-image-1.png');"></div>
+                            <h5 class="mb-2 primary__color">$59.90</h5>
+                            <p class="big">Women's White Shoulder Bag</p>
+                            <div class="single__image mt-3">
+                                <img src="./assets/images/progress-chart-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="gray2__round__box">
+                            <div class="aff_step_image" style="background-image: url('./assets/images/prod-image-2.png');"></div>
+                            <h5 class="mb-2 primary__color">$37.00</h5>
+                            <p class="big">SIRIUS 2 MINI BLACK</p>
+                            <div class="single__image mt-3">
+                                <img src="./assets/images/progress-chart-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="gray2__round__box">
+                            <div class="aff_step_image" style="background-image: url('./assets/images/prod-image-3.png');"></div>
+                            <h5 class="mb-2 primary__color">$99.90</h5>
+                            <p class="big">Nike Air Force 1</p>
+                            <div class="single__image mt-3">
+                                <img src="./assets/images/progress-chart-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="gray2__round__box">
+                            <div class="aff_step_image" style="background-image: url('./assets/images/prod-image-4.png');"></div>
+                            <h5 class="mb-2 primary__color">$89.75</h5>
+                            <p class="big">HW22 Waterproof Watch</p>
+                            <div class="single__image mt-3">
+                                <img src="./assets/images/progress-chart-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section class="section__padding_top">
             <div class="container">
